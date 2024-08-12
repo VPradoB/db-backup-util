@@ -3,7 +3,7 @@
 The Database Backup Utility is a command-line tool designed to automate the process of backing up databases. It supports multiple database systems, provides options for full and incremental backups, and can be scheduled to run at regular intervals. The tool is designed for ease of use and reliability, ensuring your data is securely stored.
 
 ## Features
-- Supports Multiple Databases: Compatible with PostgreSQL.
+- Compatible with PostgreSQL.
 - Customizable Backup Locations: Save backups to local directories.
 
 ## Next steps
@@ -43,14 +43,9 @@ pip install -r requirements.txt
 ### Basic Commands
 - Backup a Database:
 ```bash
-python backup.py --db-type mysql --host localhost --user root --password mypassword --database mydb --backup-type full
+python main.py backup --db-type mysql --host localhost --user root --password mypassword --database mydb
 ```
 Replace the placeholders with your actual database details.
-
-- Schedule a Backup:
-```bash
-python schedule_backup.py --db-type mysql --host localhost --user root --password mypassword --database mydb --interval daily 
-```
 
 ### Command-Line Options
 - **--db-type**: Type of database (mysql, postgresql, mssql).
@@ -62,10 +57,10 @@ python schedule_backup.py --db-type mysql --host localhost --user root --passwor
 - **--interval**: Scheduling interval (daily, weekly, monthly).
 
 ### Example
-To perform a full backup of a MySQL database and save it to a remote server with encryption enabled:
+To perform a full backup of a PostgreSQL database and save it to a remote server with encryption enabled:
 
 ```bash
-python backup.py --db-type mysql --host localhost --user root --password mypassword --database mydb --backup-type full --encrypt --remote-server user@remote-server:/backups/
+python main.py backup --db-type postgresql --host localhost --user postgres --password mypassword --database mydb
 ```
 
 ## Configuration (Work in Progress)
