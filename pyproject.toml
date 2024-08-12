@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "db-backup-util"
+version = "0.1.0"
+description = "a multiplatform database backup utility"
+authors = ["Victor Prado <vmpradob@gmail.com>"]
+license = "MIT License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+click = "^8.1.7"
+pymssql = "^2.3.0"
+psycopg2 = "^2.9.9"
+mysql-connector-python = "^9.0.0"
+black = "^24.8.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
