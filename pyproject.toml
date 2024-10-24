@@ -11,7 +11,7 @@ python = "^3.12"
 click = "^8.1.7"
 pymssql = "^2.3.0"
 psycopg2 = "^2.9.9"
-mysql-connector-python = "^9.0.0"
+mysql-connector-python = "^9.1.0"
 black = "^24.8.0"
 
 
